@@ -1,9 +1,18 @@
 <?php
 
-class User
-{
-    private $login;
-    private $password;
-    private $name;
-    private $surname;
-}
+ namespace MyClass {
+     class User
+     {
+         public $login;
+         public $name;
+         public $surname;
+
+         function __construct($login)
+         {
+             $this->login = $login;
+         }
+     }
+
+     $admin = new User('admin');
+     $user = new User('user');
+ }
