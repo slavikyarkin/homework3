@@ -12,7 +12,5 @@
              $this->login = $login;
          }
      }
-
      $admin = new User('admin');
-     $user = new User('user');
  }

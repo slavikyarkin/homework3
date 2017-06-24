@@ -3,6 +3,10 @@ session_start();
 require_once('user.php');
 if (!$_SESSION['login'])
     header('Location: index.php');
+if (!isset($_SESSION['name'])){
+    $admin->name = $_SESSION['name'];
+    $admin->surname = $_SESSION['surname'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
